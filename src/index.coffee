@@ -7,7 +7,7 @@ fastify.get "/", (_request, _reply) ->
   { hello: "world" }
 
 try
-  fastify.listen { port: 8000 }
+  fastify.listen { host: "0.0.0.0", port: 8000 }
 catch error
   fastify.log.error error
   process.exit 1
