@@ -4,9 +4,9 @@
   "main": "dist/index.js",
   "type": "module",
   "scripts": {
-    "build": "coffee --compile --output dist/ index.coffee",
+    "build": "coffee --compile --output dist/ src/",
     "start": "node dist/index.js",
-    "watch": "coffee --watch --compile --output dist/ index.coffee"
+    "watch": "coffee --watch --compile --output dist/ src/"
   },
   "keywords": [],
   "author": "",
