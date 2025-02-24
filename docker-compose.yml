@@ -2,7 +2,7 @@ services:
   coffeeapi:
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: node.Dockerfile
     container_name: coffeeapi
     ports:
       - "8000:8000"
