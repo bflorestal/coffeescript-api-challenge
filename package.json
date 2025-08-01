@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "@fastify/multipart": "^9.0.1",
-    "fastify": "^5.1.0"
+    "fastify": "^5.1.0",
+    "s3rver": "^3.7.1"
   }
 }

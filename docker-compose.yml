@@ -21,6 +21,20 @@ services:
     networks:
       - app_network
 
+  s3-bucket:
+    build:
+      context: .
+      dockerfile: s3rver.Dockerfile
+    restart: always
+    ports:
+      - 9000:9000
+    command: "node dist/s3.js"
+    environment:
+      AWS_ACCESS_KEY_ID: S3RVER
+      AWS_SECRET_ACCESS_KEY: S3RVER
+    volumes:
+      - ".:/home/app"
+
 networks:
   app_network:
     driver: bridge
